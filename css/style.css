@@ -1,0 +1,899 @@
+body{
+    background-color: darkslategray;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    background-image: url("/images/new_background.jpeg")
+}
+
+
+.header h1{
+    color: white;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+    top: 10px;
+    left: 10px;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: underline overline;
+
+}
+.header nav{
+    float: right;
+    right: 10px;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid green;
+    border-radius: 25px;
+    background-color: darkcyan;
+
+}
+.header nav ul{
+    font-size: 13px;
+    display: flex;
+    list-style-type: none;
+    padding: 5px;
+    text-align: center;
+    float: right;
+    margin: 5px;
+}
+.header nav  ul li {
+    float: right;
+    margin: auto;
+    border-right: 1px solid white;
+  }
+.header nav ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+.header nav li a:hover {
+    text-decoration: underline;
+    color: red;
+  }
+  
+.header nav a.active_page{
+    text-decoration: underline overline;
+    
+    color: yellow;
+  }
+#skip{
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+  }
+  #skip:focus{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+    color: red;
+    background-color: rgb(40, 33, 33);
+    text-decoration: underline;
+    border: 1px solid black;
+  }
+
+.main_container{
+    background-color: lightslategrey;
+    border: 2px solid green;
+    border-radius: 50px;
+    width:75%;
+    margin: auto;
+    height: 85%;
+    padding: 20px;
+    margin-top: 50px;
+}
+.introduction{
+    border: 2px solid green;
+    width: 100%;
+    height: 35%;
+    border-radius: 40px;
+    margin: auto;
+    padding: 10px;
+    background-color: darkcyan;
+    margin-bottom: 10px;
+}
+.group_intro{
+    display: grid;
+    grid-template-columns: auto;  
+    width: 100%;
+}
+.group_intro img{
+    border: 2px solid green;
+    margin: auto;
+    border-radius: 60px;
+    height:75%;
+    width: 75%;
+    padding: 10px;
+    background-color: wheat;
+    transition: all 0.2s ease-in;
+}
+.group_intro img:hover{
+    background-color: wheat;
+    border: 3px solid red;
+    transform: scale(1.5);
+}
+.group_intro p{
+    color: black;
+    border: 2px solid green;
+    margin: auto;
+    text-align:center;
+    overflow: auto;
+    background-color: wheat;
+    transition: all 0.2s ease-in;
+    justify-content: center;
+}
+.group_intro p:hover{
+    background-color: wheat;
+    border: 3px solid red;
+    transform: scale(1.3);
+}
+.interests_container{
+    border: 2px solid green;
+    width: 100%;
+    height: 20%;
+    border-radius: 40px;
+    margin: auto;
+    padding: 10px;
+    background-color: darkcyan;
+    text-shadow: #000000;
+}
+.interests_container h2{
+    font-size: 1.3em;
+    text-align: center;
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.main_interests{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+}
+#music{
+    border: 2px solid green;
+    border-radius: 40px;
+    background-color: wheat;
+    margin: auto;
+    text-align:center;
+    transition: all 0.2s ease-in;
+}
+#music:hover{
+    background-color: wheat;
+    border: 3px solid red;
+    transform: scale(1.3);
+}
+#music img{
+    border-radius: 60px;
+    height:75%;
+    width: 100%;
+    padding: 10px;
+    background-color: wheat;
+}
+#music h3{
+    font-size: 1.2em;
+    text-align: center;
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+a.fill_div{
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+#sports{
+    border: 2px solid green;
+    border-radius: 40px;
+    background-color: wheat;
+    margin: auto;
+    text-align:center;
+    transition: all 0.2s ease-in;
+}
+#sports:hover{
+    background-color: wheat;
+    border: 3px solid red;
+    transform: scale(1.3);
+}
+#sports img{
+    border-radius: 60px;
+    height:75%;
+    width: 100%;
+    padding: 10px;
+    background-color: wheat;
+}
+#sports h3{
+    font-size: 1.2em;
+    text-align: center;
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.best_artists{
+    border: 2px solid green;
+    width: 100%;
+    height: 35%;
+    border-radius: 40px;
+    margin: auto;
+    padding: 10px;
+    background-color: darkcyan;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.best_artists h2{
+    text-align: center;
+    font-size: 1.3em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    text-shadow: 2px 2px gray;
+}
+.artist_grid{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    justify-content: center;
+}
+.flip-card {
+    background-color: transparent;
+    width: 200px;
+    height: 150px;
+    border: 1px solid green;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  .flip-card-front img{
+    width: 200px;
+    height: 150px;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: wheat;
+    color: black;
+    transform: rotateY(180deg);
+    overflow: auto;
+  }
+  .flip-card-back ul {
+    list-style-type: disc;
+  }
+  .flip-card-back h1{
+    font-size: 2em;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    margin: 5px;
+  }
+  .flip-card-back h3{
+    font-size: 1em;
+    font-weight: bold;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+  }
+  
+  .best_songs{
+    border: 2px solid green;
+    width: 100%;
+    height: 35%;
+    border-radius: 40px;
+    margin: auto;
+    padding: 10px;
+    background-color: darkcyan;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .best_songs h2{
+    text-align: center;
+    font-size: 1.3em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    text-shadow: 2px 2px gray;
+  }
+  .songs_grid{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    justify-content: center;
+  }
+  .spotify_wrapped{
+    border: 2px solid green;
+    width: 100%;
+    border-radius: 40px;
+    margin: auto;
+    padding: 10px;
+    background-color: darkcyan;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .spotify_wrapped h2{
+    text-align: center;
+    font-size: 1.3em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    text-shadow: 2px 2px gray;
+  }
+  .sports_experiences{
+    border: 2px solid green;
+    width: 100%;
+    height: 35%;
+    border-radius: 40px;
+    margin: auto;
+    padding: 10px;
+    background-color: darkcyan;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .sports_grid{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    justify-content: center;
+  }
+  .sports_experiences h2{
+    text-align: center;
+    font-size: 1.3em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    text-shadow: 2px 2px gray;
+  }
+  .sportsperson{
+    border: 2px solid green;
+    width: 100%;
+    height: 35%;
+    border-radius: 40px;
+    margin: auto;
+    padding: 10px;
+    background-color: darkcyan;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .athlete_grid{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    justify-content: center;
+  }
+  .sportsperson h2{
+    text-align: center;
+    font-size: 1.3em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    text-shadow: 2px 2px gray;
+  }
+  .podcast_wrapped{
+    border: 2px solid green;
+    width: 100%;
+    border-radius: 40px;
+    margin: auto;
+    padding: 10px;
+    background-color: darkcyan;
+    text-align: center;
+  }
+  .podcast_wrapped h2{
+    text-align: center;
+    font-size: 1.3em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    text-shadow: 2px 2px gray;
+  }
+  .resume_page{
+    margin: auto;
+    top: 300px;
+    bottom: 50px;
+
+  }
+  iframe{
+    width: 100%;
+    height: 100vh;
+  }
+  @media only screen and (min-width:600px){
+    .best_artists{
+        border: 2px solid green;
+        width: 100%;
+        height: 35%;
+        border-radius: 40px;
+        margin: auto;
+        padding: 10px;
+        background-color: darkcyan;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .best_artists h2{
+        text-align: center;
+        margin: auto;
+        font-size: 1.5em;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: black;
+        text-shadow: 2px 2px gray;
+    }
+    .artist_grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+        justify-content: center;
+    }
+    .flip-card {
+        background-color: transparent;
+        width: 175px;
+        height: 200px;
+        border: 1px solid green;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+      }
+      
+      /* This container is needed to position the front and back side */
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+      
+      /* Do an horizontal flip when you move the mouse over the flip box container */
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+      
+      /* Position the front and back side */
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+      }
+      
+      /* Style the front side (fallback if image is missing) */
+      .flip-card-front {
+        background-color: #bbb;
+        color: black;
+      }
+      .flip-card-front img{
+        width: 175px;
+        height: 200px;
+      }
+      
+      /* Style the back side */
+      .flip-card-back {
+        background-color: wheat;
+        color: black;
+        transform: rotateY(180deg);
+        overflow: auto;
+      }
+      .flip-card-back ul {
+        list-style-type: disc;
+      }
+      .flip-card-back h1{
+        font-size: 2em;
+        font-weight: bold;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-transform: uppercase;
+        margin: 5px;
+      }
+      .flip-card-back h3{
+        font-size: 1em;
+        font-weight: bold;
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 5px;
+      }
+      
+      .best_songs{
+        border: 2px solid green;
+        width: 100%;
+        height: 35%;
+        border-radius: 40px;
+        margin: auto;
+        padding: 10px;
+        background-color: darkcyan;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      .best_songs h2{
+        text-align: center;
+        font-size: 1.5em;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: black;
+        text-shadow: 2px 2px gray;
+      }
+      .songs_grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+        justify-content: center;
+      }
+
+      .sports_experiences{
+        border: 2px solid green;
+        width: 100%;
+        height: 35%;
+        border-radius: 40px;
+        margin: auto;
+        padding: 10px;
+        background-color: darkcyan;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      .sports_grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+        justify-content: center;
+      }
+      .sports_experiences h2{
+        text-align: center;
+        font-size: 1.5em;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: black;
+        text-shadow: 2px 2px gray;
+      }
+      .sportsperson{
+        border: 2px solid green;
+        width: 100%;
+        height: 35%;
+        border-radius: 40px;
+        margin: auto;
+        padding: 10px;
+        background-color: darkcyan;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      .athlete_grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+        justify-content: center;
+      }
+      .sportsperson h2{
+        text-align: center;
+        font-size: 1.5em;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: black;
+        text-shadow: 2px 2px gray;
+      }
+
+  }
+  @media only screen and (min-width:768px){
+    .group_intro{
+        display: grid;
+        grid-template-columns: auto auto;  
+        width: 100%;
+    }
+   
+    .group_intro p{
+        color: black;
+        border: 2px solid green;
+        margin: auto;
+        text-align:center;
+        overflow: auto;
+        background-color: wheat;
+        transition: all 0.2s ease-in;
+        justify-content: center;
+    }
+    .group_intro p:hover{
+        background-color: wheat;
+        border: 3px solid red;
+        transform: scale(1.4);
+    }
+    .best_artists{
+        border: 2px solid green;
+        width: 100%;
+        height: 35%;
+        border-radius: 40px;
+        margin: auto;
+        padding: 10px;
+        background-color: darkcyan;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .best_artists h2{
+        text-align: center;
+        margin: auto;
+        font-size: 1.75em;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: black;
+        text-shadow: 2px 2px gray;
+    }
+    .artist_grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+        justify-content: center;
+    }
+    .flip-card {
+        background-color: transparent;
+        width: 250px;
+        height: 200px;
+        border: 1px solid green;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+      }
+      
+      /* This container is needed to position the front and back side */
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+      
+      /* Do an horizontal flip when you move the mouse over the flip box container */
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+      
+      /* Position the front and back side */
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+      }
+      
+      /* Style the front side (fallback if image is missing) */
+      .flip-card-front {
+        background-color: #bbb;
+        color: black;
+      }
+      .flip-card-front img{
+        width: 250px;
+        height: 200px;
+      }
+      
+      /* Style the back side */
+      .flip-card-back {
+        background-color: wheat;
+        color: black;
+        transform: rotateY(180deg);
+        overflow: auto;
+      }
+      .flip-card-back ul {
+        list-style-type: disc;
+      }
+      .flip-card-back h1{
+        font-size: 2em;
+        font-weight: bold;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-transform: uppercase;
+        margin: 5px;
+      }
+      .flip-card-back h3{
+        font-size: 1em;
+        font-weight: bold;
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 5px;
+      }
+      
+      .best_songs{
+        border: 2px solid green;
+        width: 100%;
+        height: 35%;
+        border-radius: 40px;
+        margin: auto;
+        padding: 10px;
+        background-color: darkcyan;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      .best_songs h2{
+        text-align: center;
+        font-size: 1.75em;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: black;
+        text-shadow: 2px 2px gray;
+      }
+      .songs_grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+        justify-content: center;
+      }
+
+      .sports_experiences{
+        border: 2px solid green;
+        width: 100%;
+        height: 35%;
+        border-radius: 40px;
+        margin: auto;
+        padding: 10px;
+        background-color: darkcyan;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      .sports_grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+        justify-content: center;
+      }
+      .spotify_wrapped h2{
+        font-size: 1.75em;
+      }
+      .podcast_wrapped h2{
+        font-size: 1.75em;
+      }
+      .sports_experiences h2{
+        text-align: center;
+        font-size: 1.75em;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: black;
+        text-shadow: 2px 2px gray;
+      }
+      .sportsperson{
+        border: 2px solid green;
+        width: 100%;
+        height: 35%;
+        border-radius: 40px;
+        margin: auto;
+        padding: 10px;
+        background-color: darkcyan;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      .athlete_grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+        justify-content: center;
+      }
+      .sportsperson h2{
+        text-align: center;
+        font-size: 1.75em;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: black;
+        text-shadow: 2px 2px gray;
+      }
+      .interests_container h2{
+        font-size: 1.6em;
+        text-align: center;
+        color: black;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-shadow: 2px 2px gray;
+    }
+    .main_interests{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+    }
+    #music{
+        border: 2px solid green;
+        border-radius: 40px;
+        background-color: wheat;
+        margin: auto;
+        text-align:center;
+        transition: all 0.2s ease-in;
+    }
+    #music:hover{
+        background-color: wheat;
+        border: 3px solid red;
+        transform: scale(1.3);
+    }
+    #music img{
+        border-radius: 60px;
+        height:75%;
+        width: 100%;
+        padding: 10px;
+        background-color: wheat;
+    }
+    #music h3{
+        font-size: 1.3em;
+        text-align: center;
+        color: black;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    a.fill_div{
+        display: block;
+        height: 100%;
+        width: 100%;
+        text-decoration: none;
+    }
+    #sports{
+        border: 2px solid green;
+        border-radius: 40px;
+        background-color: wheat;
+        margin: auto;
+        text-align:center;
+        transition: all 0.2s ease-in;
+    }
+    #sports:hover{
+        background-color: wheat;
+        border: 3px solid red;
+        transform: scale(1.3);
+    }
+    #sports img{
+        border-radius: 60px;
+        height:75%;
+        width: 100%;
+        padding: 10px;
+        background-color: wheat;
+    }
+    #sports h3{
+        font-size: 1.3em;
+        text-align: center;
+        color: black;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+  }
+ 
+    
