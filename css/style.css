@@ -155,6 +155,35 @@ body{
     font-weight: bold;
     text-transform: uppercase;
 }
+.connect_container{
+    border: 2px solid green;
+    width: 100%;
+    height: 20%;
+    border-radius: 40px;
+    margin: auto;
+    padding: 10px;
+    background-color: darkcyan;
+    text-shadow: #000000;
+    margin-top: 10px;
+}
+.connect_container h2{
+    font-size: 1.3em;
+    text-align: center;
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 10px;
+}
+svg{
+    margin: auto;
+}
+.icon_grid{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    justify-content: center;
+}
 .main_interests{
     display: grid;
     grid-template-columns: auto;
@@ -441,6 +470,16 @@ a.fill_div{
     height: 100vh;
   }
   @media only screen and (min-width:600px){
+    .connect_container h2{
+        font-size: 1.5em;
+        text-align: center;
+        color: black;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 10px;
+        text-shadow: 2px 2px gray;
+    }
     .best_artists{
         border: 2px solid green;
         width: 100%;
@@ -614,9 +653,27 @@ a.fill_div{
         color: black;
         text-shadow: 2px 2px gray;
       }
+      .icon_grid{
+        display: flex;
+        gap: 15px;
+    }
 
   }
   @media only screen and (min-width:768px){
+    .connect_container h2{
+        font-size: 1.5em;
+        text-align: center;
+        color: black;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 10px;
+        text-shadow: 2px 2px gray;
+    }
+    .icon_grid{
+        display: flex;
+        gap: 15px;
+    }
     .group_intro{
         display: grid;
         grid-template-columns: auto auto;  
